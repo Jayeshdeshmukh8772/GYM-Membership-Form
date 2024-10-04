@@ -19,4 +19,5 @@ import anvil.server
 
 @anvil.server.callable:
 def submit(name,weight,address,training):
-  pass
+  app_tables.gym.add_row(name=name,address=address,training=training,weight=weight)
+  
